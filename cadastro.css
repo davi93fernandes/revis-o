@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background: #DFE6ED;
+    padding: 5px;
+}
+
+.cabecalho_itens {
+    display: inline-block;
+}
+
+.cabecalho_itens,
+a {
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+a {
+    background-color: #4B5C6B;
+    color: white;
+    margin: 8px;
+    padding: 10px;
+}
+
+.titulo {
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+    background-color: #C3CFD9;
+}
+
+main {
+    padding: 20px;
+}
+
+.container-formulario>* {
+    margin-top: 5px;
+}
+
+.container-formulario,
+input {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.container-formulario,
+button {
+    display: block;
+    width: 100%;
+    background-color: #4B5C6B;
+    color: white;
+    border-radius: 3px;
+}
+
+.status {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.status_sucesso {
+    background-color: #207868;
+    border-radius: 3px;
+    display: none;
+}
+
+.status_error {
+    background-color: #AC6363;
+    border-radius: 3px;
+    display: none;
+}
