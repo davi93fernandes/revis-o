@@ -59,21 +59,25 @@ button {
     border-radius: 3px;
 }
 
-.status {
-    padding: 5px;
+.status_error,
+.status_sucesso {
+    padding: 3px;
     text-align: center;
     width: 100%;
     display: none;
+    margin: 1px;
 }
 
 .status_sucesso {
     background-color: #207868;
     border-radius: 3px;
     display: none;
+    text-align: center;
 }
 
 .status_error {
     background-color: #AC6363;
     border-radius: 3px;
     display: none;
+    text-align: center;
 }
