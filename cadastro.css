@@ -39,24 +39,31 @@ main {
 }
 
 .container-formulario>* {
-    margin-top: 5px;
+    margin-top: 8px;
+    align-items: center;
+    margin: auto;
+    width: 80%;
 }
 
-.container-formulario,
-input {
+.inputCadastro{
     display: block;
-    width: 100%;
+    width: 80%;
     padding: 3px;
     border-radius: 3px;
+    margin-left:10%;
+    margin-top: 4px;
 }
 
 .container-formulario,
 button {
+    margin: auto;
     display: block;
-    width: 100%;
+    width: 80%;
     background-color: #4B5C6B;
     color: white;
     border-radius: 3px;
+    padding: 8px;
+    margin-top: 4px;
 }
 
 .status_error,
