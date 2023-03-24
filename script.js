@@ -10,15 +10,15 @@ async function cadastrar() {
     // VALOR DOS INPUTS 
     title = elementoTitulo.value
     description = elementoDescricao.value
-
-    if ((title === "" ) || (description === "")) {
+    
+    //VALIDAÇÃO DOS CAMPOS
+    if ((title === "") || (description === "")) {
         document.getElementById("retornoErro").style.display = "inline-block"
         document.getElementById("retornoErro").style.backgroundColor = "#ac6363"
         document.getElementById("retornoErro").innerText = "FALTA ALGUMA INFORMAÇÃO"
 
-    } else{
-        //ATRIBUI URL Á UMA VARIAVEL
-        // TAMBÉM OS DADOS PARA API
+    } else {
+        //ATRIBUI URL Á UMA VARIAVEL, TAMBÉM OS DADOS PARA API
         const url = "https://target-api-simples.cyclic.app/livros"
         const payload = {
             title: title,
@@ -36,14 +36,14 @@ async function cadastrar() {
         document.getElementById("retornoErro").style.display = "none"
     }
 }
-    //CRIA FUNÇÃO PARA CONFIGURAÇÃO E SELEÇÃO DE OBJETOS (CHAVE : VAOR) PARA API
-    async function dadosParaAPI(url, payload) {
-        const resposta = await fetch(url,
-            {
-                method: "POST",
-                headers: { "content-type": "application/json" },
-                body: JSON.stringify(payload)
-            })
-        return resposta
+//CRIA FUNÇÃO PARA CONFIGURAÇÃO E SELEÇÃO DE OBJETOS (CHAVE : VAOR) PARA API
+async function dadosParaAPI(url, payload) {
+    const resposta = await fetch(url,
+        {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(payload)
+        })
+    return resposta
 
-    }
+}
