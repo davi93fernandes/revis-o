@@ -11,15 +11,15 @@ body {
 .setas {
     display: inline;
     width: 40px;
-    height: 40px;
+    height: 30px;
     border: none;
     border-radius: 4px;
 }
 
 input {
     display: inline;
-    width: 70%;
-    height: 40px;
+    width: 89%;
+    height: 30px;
     border: solid 2px gray;
     border-radius: 4px;
 }

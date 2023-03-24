@@ -45,12 +45,12 @@ main {
     width: 80%;
 }
 
-.inputCadastro{
+.inputCadastro {
     display: block;
     width: 80%;
     padding: 3px;
     border-radius: 3px;
-    margin-left:10%;
+    margin-left: 10%;
     margin-top: 4px;
 }
 
@@ -64,6 +64,7 @@ button {
     border-radius: 3px;
     padding: 8px;
     margin-top: 4px;
+    border: none;
 }
 
 .status_error,
@@ -87,4 +88,8 @@ button {
     border-radius: 3px;
     display: none;
     text-align: center;
+}
+
+h1 {
+    margin-left: 25%;
 }
