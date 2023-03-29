@@ -3,19 +3,25 @@ window.addEventListener("load", () => {
     const elementoBotao = document.getElementById("botaoCadastrar")
     elementoBotao.addEventListener("click", cadastrar)
 })
+
 //ELEMENTO INPUT EM MÃOS
 async function cadastrar() {
     const elementoTitulo = document.getElementById("tituloLivro")
     const elementoDescricao = document.getElementById("descricaoLivro")
+
+    // LIMPANO TELA APOS RETORNO ERRO/SUCESSO
+    resetMsgRetorno()
+
     // VALOR DOS INPUTS 
     title = elementoTitulo.value
     description = elementoDescricao.value
-    
+
     //VALIDAÇÃO DOS CAMPOS
     if ((title === "") || (description === "")) {
+        //ALTERA CSS DE UM OBJETO HTML(TAG DIV)
         document.getElementById("retornoErro").style.display = "inline-block"
         document.getElementById("retornoErro").style.backgroundColor = "#ac6363"
-        document.getElementById("retornoErro").innerText = "FALTA ALGUMA INFORMAÇÃO"
+        document.getElementById("retornoErro").innerText = retorno.json()
 
     } else {
         //ATRIBUI URL Á UMA VARIAVEL, TAMBÉM OS DADOS PARA API
@@ -46,4 +52,9 @@ async function dadosParaAPI(url, payload) {
         })
     return resposta
 
+}
+
+function resetMsgRetorno() {
+    document.getElementById("retornoErro").style.display = "none"
+    document.getElementById("retornoSucesso").style.display = "none"   
 }
